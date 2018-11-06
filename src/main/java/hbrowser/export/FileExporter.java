@@ -97,12 +97,10 @@ public class FileExporter implements Exporter {
         for (ColumnQualifier column : columns) {
             DataCell cell = row.getCell(column);
             if (cell != null) {
-//                formatter.append(cell.getValue());
                 sb.append(cell.getValue()).append(delimiter);
             }
             else {
-//                formatter.append("");
-                sb.append("").append(delimiter);
+                sb.append(delimiter);
             }
         }
 

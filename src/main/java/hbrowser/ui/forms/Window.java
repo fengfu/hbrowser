@@ -297,7 +297,7 @@ public class Window {
 
             Manifest manifest = new Manifest(stream);
             version = manifest.getMainAttributes().getValue("version");
-            return version == null ? "0.1" : version;
+            return version == null ? "0.2" : version;
         } catch (Exception ignore) {
             return version;
         } finally {
